@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header {
+    color: black;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    background-color: #CAAAF0;  
+}
+img {
+    width: 100px;
+}
+#flores{
+    width: 350px;
+}
+#flores1{
+    width: 370px;
+}
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+   
+}
+nav {
+    float: right;
+    width: 20%;
+    padding: 20px;
+    background-color: #584B75;
+    color: white;
+    height: 300px; 
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 150px;
+}
+ul li {
+    position: relative;
+
+} 
+li ul {
+    position: absolute;
+    right: 149px;
+    top: 0;
+    display: none;
+}
+ul li a {
+    display: block;
+    text-decoration: none;
+    color:blueviolet;
+    background-color: #AA9FC2;
+    padding: 5px;
+    border-radius: 10px;
+}
+li:hover ul {
+    display: block;
+}
+ul li a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+    background-color: #7D8BAD;
+}
+main {
+    float: right;
+    width: 60%;
+    padding: 20px;
+    height:300px;
+    background-color: #B79DF5;
+}
+aside {
+    float: left;
+    padding: 20px;
+    width: 20%;
+    height: 300px;
+    background-color: #917CC2;
+}
+footer {
+    padding: 10px;
+    background-color: black;
+    text-align: left;
+    font-size: small;
+    color: white;
+}
+@media (max-width:600px) {
+        nav, main, aside {
+            width: 100%;
+            height: auto;
+        }
+}
+header > img, header > h1 {
+    display: inline-block;
+    vertical-align: middle;
+}
+figure{
+    width: 300px;
+}

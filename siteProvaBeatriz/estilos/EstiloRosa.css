@@ -1,0 +1,13 @@
+body{
+    background: linear-gradient(#B03531, #70221F);
+    width: 90%;
+    background-size: cover;
+}
+h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+
+}
+footer{
+    text-align: center;
+}

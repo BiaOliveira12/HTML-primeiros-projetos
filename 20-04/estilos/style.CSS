@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header {
+    color: black;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    background-color: #CAAAF0;  
+}
+img {
+    width: 100px;
+}
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+   
+}
+nav {
+    float: right;
+    width: 20%;
+    padding: 20px;
+    background-color: #584B75;
+    color: white;
+    height: 300px; /*propriedade utilizada apenas para visualização*/
+}
+/*formatação menu*/
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 150px;
+}
+/*Posicionamento dos itens da lista para depois posicionar o submenu*/
+ul li {
+    position: relative;
+
+} 
+/*Posicionando o menu no lado direito*/
+li ul {
+    position: absolute;
+    left: 149px;
+    top: 0;
+    display: none;
+}
+/*Melhorando aparencia submenu, porém, continua sem visualização*/
+ul li a {
+    display: block;
+    text-decoration: none;
+    color:blueviolet;
+    background-color: #AA9FC2;
+    padding: 5px;
+    border-radius: 10px;
+}
+li:hover ul {
+    display: block;
+}
+/*Estilizando o evento hover*/
+ul li a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+    background-color: #7D8BAD;
+}
+main {
+    float: right;
+    width: 60%;
+    padding: 20px;
+    height:300px;
+    background-color: #B79DF5;
+}
+aside {
+    float: left;
+    padding: 20px;
+    width: 20%;
+    height: 300px;
+    background-color: #917CC2;
+}
+footer {
+    padding: 10px;
+    background-color: black;
+    text-align: right;
+    color: white;
+}
+@media (max-width:600px) {
+        nav, main, aside {
+            width: 100%;
+            height: auto;
+        }
+}
+header > img, header > h1 {
+    display: inline-block;
+    vertical-align: middle;
+}

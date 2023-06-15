@@ -1,0 +1,14 @@
+/*CSS externo, mais utilizado e recomendado*/
+body{
+    background: linear-gradient(#E5D9ED, #874676,#BA99B1);
+    width: 90%;
+    background-size: cover;
+}
+h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+
+}
+footer{
+    text-align: center;
+}

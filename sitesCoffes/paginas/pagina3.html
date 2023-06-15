@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../estilos/contato.CSS">
+    <link rel="shortcut icon" type="text/CSS" href="../imagens/logo.ico">
+    <title>Contato Coffees</title>
+</head>
+
+<!--Formularios 05/04/23-->
+
+<body>
+    <header>
+        <h1>Contato Coffees</h1>
+        <nav>
+            <ul>
+                <li><a href="../paginas/index.html">Página Principal</a></li>
+                <li><a href="../paginas/pagina2.html">Coffees 2</a></li>
+                <li><a href="../paginas/pagina3.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <!--Começo-->
+    <form action="#" method="post">
+        <h3>Contatos</h3>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <P>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" required autofocus>
+            </p>
+            <p>
+                <label for="e_mail">E mail</label>
+                <input type="text" id="e_mail" required>
+            </p>
+            <p>
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" placeholder="(xx)xxxxx-xxxx">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Datas</legend>
+            <p>
+                <label for="data">Data</label>
+                <input type="date" id="data">
+            </p>
+        </fieldset>
+        <br>
+        <input type="submit" value="Cadastrar">
+
+    </form>
+    <!--Fim-->
+    <footer>
+        <p>Copyright (c) 2023 Todos os direitos reservados.</p>
+    </footer>
+    <!-- post: metodo onde os caracteres ficam invisiveis (metodo mais seguro) -->
+    <!-- get: metodo onde os caracteres ficam visiveis -->
+    <!-- ud: identificador
+    Tipos de elementos input (olhar no Moodle) -->
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+/*Seletor { 
+    propriedade1: valor1;
+    propriedade2: valor2;}*/
+    
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    head{
+        border: 3px solid salmon;
+    }
+    
+    body{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     }
+    header{
+        background-color: bisque;
+        color: black;
+        padding: 20px;
+    }
+    p style{
+        text-align: center;
+        font: 50px;
+    }
