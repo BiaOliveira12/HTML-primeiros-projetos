@@ -12,6 +12,7 @@ header{
 h1{
     font-style: italic;
     font-size: 300%;
+    font-stretch: expanded;
 }
 .dp-menu ul {
     list-style-type: none;
@@ -57,4 +58,23 @@ h1{
 }
 footer{
     text-align: center;
+}
+.responsive { /*imagens*/
+    display: inline-block;
+    margin-left: 9em;
+    margin-right: auto;
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+figure{
+    text-align: center;
+} 
+img:hover{
+    transform: scale(1.1);
+    transition: 0.6s;
+}
+img:not(:hover){
+    transform: scale(1.0);
+    transition: 0.6s;
 }
