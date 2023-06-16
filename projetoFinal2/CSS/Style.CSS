@@ -1,0 +1,80 @@
+:root {
+    --cor-fundo: rgb(34, 41, 37);
+    --cor-aposfundo: rgba(36, 35, 35, 0.781);
+    --cor-hover: rgb(170, 106, 230);
+    --cor-primaria: rgb(231, 241, 236);
+}
+header{
+    text-align: center;
+    background-color: var(--cor-fundo);
+    color: white;
+}
+h1{
+    font-style: italic;
+    font-size: 300%;
+    font-stretch: expanded;
+}
+.dp-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dp-menu ul {
+    background-color: var(--cor-fundo);
+}
+
+.dp-menu ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.dp-menu ul li a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+
+}
+
+.dp-menu ul li a:hover {
+    background-color: var(--cor-hover);
+}
+
+/*SUB MENU*/
+.dp-menu ul ul {
+    display: none;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    transition: all .6s;
+}
+
+.dp-menu ul li:hover ul {
+    display: block;
+}
+
+.dp-menu ul ul li {
+    display: inline;
+}
+footer{
+    text-align: center;
+}
+.responsive { /*imagens*/
+    display: inline-block;
+    margin-left: 9em;
+    margin-right: auto;
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+figure{
+    text-align: center;
+} 
+img:hover{
+    transform: scale(1.1);
+    transition: 0.6s;
+}
+img:not(:hover){
+    transform: scale(1.0);
+    transition: 0.6s;
+}

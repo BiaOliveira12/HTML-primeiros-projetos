@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Contato BStore</title>
+    <link rel="stylesheet" href="../CSS/Style.CSS">
+    <link rel="stylesheet" href="../CSS/styleformulario.css">
+    <script src="../JS/Script.js"></script>
+    <link rel="shortcut icon" href="../image/icone.ico">
+</head>
+<body>
+    <header>
+        <br>
+        
+            <h1>BStore all</h1>
+        <nav class="dp-menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Produtos</a>
+                    <ul>
+                        <li><a href="../pages/jogos.html" target="_blank">Jogos</a></li>
+                        <li><a href="../pages/filmes.html" target="_blank">Filmes</a></li>
+                        <li><a href="../pages/livros.html" target="_blank">Livros</a></li>
+                    </ul>
+                </li>
+                <li><a href="../pages/contato.html">Contato</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="#" method="post">
+            <h1 id="contatenos">Contate-nos</h1>
+            <p>
+                <input type="text" class="noms" id="nome" placeholder="Nome" required>
+                <input type="text" class="noms" id="sobrenome" placeholder="Sobrenome" required>
+            </p>
+            <p>
+                <input type="text" class="contato" id="email" placeholder="Email" required>
+                <input type="text" class="contato" id="telefone" placeholder="Telefone" required>
+            </p>
+            <p>
+                <input type="text" id="endereco" id="info1" placeholder="Endereço" required>
+            </p>
+                <p>
+                    <button type="submit" class="botinho" id="submit" onclick="enviarContato()">Enviar</button>
+                    <button type="reset" class="botinho"onclick="clean()" >Limpar</button></p>
+            </p>
+        </form>
+    </main>
+    <footer>Quase todos direitos reservados © Beatriz Aguiar</footer>
+</body>
+
+</html>
