@@ -78,7 +78,7 @@ footer{
     border-radius: 20px;
     overflow: hidden;
     position: absolute;
-    top: 70%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -88,6 +88,8 @@ footer{
     left: 50%;
     transform: translate(-50%);
     display: flex;
+    justify-content: center;
+    margin-top: 460px;
 }
 .bar{
     width: 55px;
@@ -96,7 +98,7 @@ footer{
     margin: 6px;
     border-radius: 5px;
     cursor: pointer;
-    transition: .4s;
+    transition: 1s;
 }
 .bar:hover{
     background-color:#fff;
@@ -111,7 +113,7 @@ footer{
 }
 .slide {
     width: 20%;
-    transition: .6s;
+    transition: 2s;
 }
 .slide img{
     width: 100%;
@@ -135,13 +137,3 @@ footer{
 #divisoria{
     text-align: center;
 }
-@media (min-width: 992px) {
-    nav, main, aside {
-        
-        max-width: 767px;
-    }}
-@media (min-width: 992px) {
-    nav, main, aside {
-         
-     max-width: 767px;
-    }}

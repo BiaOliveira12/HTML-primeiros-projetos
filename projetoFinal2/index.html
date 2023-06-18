@@ -3,12 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BStore all</title>
     <link rel="stylesheet" href="../projetoFinal2/CSS/Style.CSS">
     <link rel="shortcut icon" href="../projetoFinal2/image/icone.ico">
-    <!--<script>
+    <script>
         var nome = prompt("Como gosta de ser chamado?");
-    </script>-->
+    </script>
 </head>
 
 <body>
@@ -36,25 +38,29 @@
         <script>document.write("Olá " + nome + ", espero que goste do nosso site!")</script>
     </h2>
     <section>
-    <h3>Navegue com musica lofi:</h3>
-    <audio controls src="audio/lofi.mp3" type="audio/x-wav" loop></audio><br>
+    
     </section>
     
     <main>
         <section id="divisoria"><h1>Alguns jogos lançados ultimamente:</h1></section>
         
+        <!--Slide-->
         <section class="content">
             <section class="slides">
-                <input type="radio" name="slide" class="identify" id="slide1" checked>
-                <input type="radio" name="slide" class="identify" id="slide2">
-                <input type="radio" name="slide" class="identify" id="slide3">
-                <input type="radio" name="slide" class="identify" id="slide4">
-                <input type="radio" name="slide" class="identify" id="slide5">
+                <!--Radio buttons-->
+                <input type="radio" name="radio-btn" class="identify" id="slide1" checked>
+                <input type="radio" name="radio-btn" class="identify" id="slide2">
+                <input type="radio" name="radio-btn" class="identify" id="slide3">
+                <input type="radio" name="radio-btn" class="identify" id="slide4">
+                <input type="radio" name="radio-btn" class="identify" id="slide5">
+                <!--Fim radio buttons-->
 
+                <!--Imagens do slide-->
                 <section class="slide s1">
                     <img src="./image/HogwartsLegacy.jpg" alt="Jogo Hogwarts Legacy">
                 </section>
-
+                
+                
                 <section class="slide">
                     <img src="./image/Diablo4.jpg" alt="Jogo Diablo 4">
                 </section>
@@ -69,7 +75,9 @@
                 <section class="slide">
                     <img src="./image/Zelda.jpg" alt="jogo Zelda: Tears of the Kingdom">
                 </section>
-
+                <!--Fim imagens do slide-->
+       
+                <!--Checkbox das imagens-->
                 <section class="navigation">
                     <label for="slide1" class="bar"></label>
                     <label for="slide2" class="bar"></label>
@@ -77,11 +85,14 @@
                     <label for="slide4" class="bar"></label>
                     <label for="slide5" class="bar"></label>
                 </section>
+                <!--Fim do checkbox-->
             </section>
         </section>
+        <!--Fim do slide-->
     </main>
     <br>
-    <footer>Quase todos direitos reservados © Beatriz Aguiar</footer>
+    
+    <script src="./JS/Script.js"></script>
 </body>
 
 </html>
