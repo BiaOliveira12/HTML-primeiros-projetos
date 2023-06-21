@@ -73,12 +73,12 @@ footer{
     height: auto;
 }
 .content{
-    height: 450px;
-    width: 850px;
+    height: 350px;
+    width: 650px;
     border-radius: 20px;
     overflow: hidden;
     position: absolute;
-    top: 55%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -136,4 +136,16 @@ footer{
 }
 #divisoria{
     text-align: center;
+}
+@media (max-width: 767px){
+   .content{
+    height: 250px;
+    width: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
 }

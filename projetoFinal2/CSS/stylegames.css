@@ -20,6 +20,7 @@
     height: 300px;
     border-radius: 12px;
     box-shadow: 4px 4px 12px #aaaa;
+    margin: 8px;
   }
   .card img {
     width: 100%;
@@ -56,5 +57,11 @@
   .card button:hover {
     background-color: #137de8;
     cursor: pointer;
+  }
+  @media (max-width: 767px){
+    body{
+      width: 70%;
+    height: 70%;
+    }
   }
   

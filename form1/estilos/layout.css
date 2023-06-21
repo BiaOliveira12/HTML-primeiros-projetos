@@ -1,0 +1,23 @@
+form{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 400px;
+    border: 3px solid black;
+    padding: 7px;
+}
+form > input {
+    display: block;
+}
+select{
+    display: block;
+}
+#e_mail{
+    display: block;
+}
+#coment{
+    display: block;
+}
+#button {
+    padding: 5px;
+    width: 100px;
+}
+

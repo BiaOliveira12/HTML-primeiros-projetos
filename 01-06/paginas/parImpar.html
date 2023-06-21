@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="text/javascript" src="../js/calcularParImpar.js"></script>
+    <title>Identificação de números pares e impares</title>
+</head>
+<body>
+    <form id="meuFormulario">
+        <h1 style="text-align: center;">Esta página exige os números pares e impares de uma sequência informada pelo usuario</h1>
+        <hr width="100%">
+        <label for="numero">Informa o numero para terminar a sequência</label>
+        <input id="numero" type="text">
+        <p>
+        <button type="button" id="btnExibir" onclick="exibirParImpar()">Exibir</button>
+        <button type="reset" id="clean" onclick="Clean()">Limpar</button>
+        </p>
+        Números Pares: <label for="nPares" id="nPares"></label>
+        <br><br>
+        Números Impares: <label for="nImpares" id="nImpares"></label>
+    </form>
+</body>
+</html>

@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <title>Contato BStore</title>
     <link rel="stylesheet" href="../CSS/Style.CSS">
     <link rel="stylesheet" href="../CSS/styleformulario.css">
-    <script src="../JS/Script.js"></script>
     <link rel="shortcut icon" href="../image/icone.ico">
 </head>
+
 <body>
     <header>
         <br>
-        
-            <h1>BStore all</h1>
+
+        <h1>BStore all</h1>
         <nav class="dp-menu">
             <ul>
                 <li><a href="../index.html">Home</a></li>
@@ -24,31 +25,61 @@
                     </ul>
                 </li>
                 <li><a href="../pages/contato.html">Contato</a></li>
-                
+
             </ul>
         </nav>
     </header>
     <main>
-        <form action="#" method="post">
+        <form action="#" method="post" id="cadastro">
             <h1 id="contatenos">Contate-nos</h1>
             <p>
                 <input type="text" class="noms" id="nome" placeholder="Nome" required>
                 <input type="text" class="noms" id="sobrenome" placeholder="Sobrenome" required>
             </p>
             <p>
-                <input type="text" class="contato" id="email" placeholder="Email" required>
-                <input type="text" class="contato" id="telefone" placeholder="Telefone" required>
+                <input type="email" class="contato" id="email" placeholder="Email">
+                <input type="tel" class="contato" id="telefone" placeholder="Telefone" required>
             </p>
             <p>
-                <input type="text" id="endereco" placeholder="Endereço" class="end" required>
+                <label for="dtnascimento" class="fonte">Data de nascimento: </label><br>
+                <input id="dtnascimento" type="date">
+
+            <p>
+            <p>
+            <section id="barra">
+                <label for="sexo" class="fonte">Sexo: </label><br>
+
+                <input type="radio" name="Rdio" value="Feminino" id="genero1">
+                <label for="rdio1">Feminino</label>
+                <input type="radio" name="Rdio" value="Masculino" id="genero2">
+                <label for="check2">Masculino</label>
+                <input type="radio" name="Rdio" value="Outro" id="genero2">
+                <label for="rdio3">Outro</label>
+            </section>
+
+            </p><br>
+
+            <button type="submit" class="botinho" id="submit" onclick="cadastrar()">Enviar</button>
+            <button type="reset" class="botinho" id="rest" onclick="Limpar()">Limpar</button>
             </p>
-                <p>
-                    <button type="submit" class="botinho" id="submit" onclick="enviarContato()">Enviar</button>
-                    <button type="reset" class="botinho"onclick="clean()">Limpar</button></p>
-            </p>
+            </p><br><br>
+
+            <h3>Dados Informados</h3>
+            Nome: <label id="nomeCad"></label>
+            <br>
+            Sobrenome: <label id="sobrenomeCad"></label>
+            <br>
+            Telefone: <label id="telefoneCad"></label>
+            <br>
+            Email: <label id="emailCad"></label>
+            <br>
+            DataNascimento: <label id="nascimentoCad"></label>
+            <br>
+
         </form>
-    </main>
+    </main><br><br>
     <footer>Quase todos direitos reservados © Beatriz Aguiar</footer>
+    <script src="../JS/Script.js"></script>
 </body>
 
 </html>
