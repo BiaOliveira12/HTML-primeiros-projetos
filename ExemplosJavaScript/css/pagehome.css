@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #9A8BF7;
+}
+a {
+    margin: 2vw;
+    background-color: rgb(185,106,159);
+    border-radius: 15px;
+    padding: 2vw;
+    text-decoration: none;
+    color: black;
+    font-family:cursive;
+}
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+a:hover {
+    transform: scale(0.9);
+    transition: 0.2s;
+}
+a:not(:hover) {
+    transform: scale(1);
+    transition: 0.2s;
+}

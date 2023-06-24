@@ -17,21 +17,7 @@ function cadastrarprof(){
     document.getElementById("nomeCad").innerHTML=professor.nome;
     document.getElementById("sobrenomeCad").innerHTML=professor.sobrenome;
     document.getElementById("nascimentoCad").innerHTML=dataformatada;
-    let categoria=prompt("Digite:\n[T] para Temporario;\n[E] para Efetivo");
-    if(categoria.toUpperCase()=="E"){
-        professorEfetivo=Object.create(professor);
-        professorEfetivo.CPF=prompt("Informe o CPF");
-        document.getElementById("documento").innerHTML="CPF: "+professorEfetivo.CPF;
-    }else{
-        if(categoria.toUpperCase()=="T"){
-            professorTemporario = Object.create(professor);
-            professorTemporario.CNPJ=prompt("Informe o CNPJ");
-            document.getElementById("documento").innerHTML="CNPJ: "+professorTemporario.CNPJ;
-        }
-        else{
-            alert("Categoria de professor não encontrada!");
-        }
-    }
+    
     document.getElementById("frmCadastro");
 
 }

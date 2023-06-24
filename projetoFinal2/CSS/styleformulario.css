@@ -48,15 +48,7 @@ input{
     transform: scale(1.0);
     transition: 0.4s;
 }
-#barra{
-    margin: 6px;
-    cursor: pointer;
-}
-select{
-    text-align: center;
-    height: 30px;
-    width: 150px;
-}
+
 .fonte{
     font-weight: bold;
 }
@@ -65,5 +57,12 @@ select{
     background-color: #b9b9b9;
     text-align: center;
     font-size: 20px;
+    
+}
+#idade{
+    width: 469px;
+    background-color: #b9b9b9;
+    text-align: center;
+    font-size: medium;
     
 }

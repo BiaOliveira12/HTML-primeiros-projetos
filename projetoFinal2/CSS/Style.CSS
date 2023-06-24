@@ -19,6 +19,9 @@ h1{
     font-size: 300%;
     font-stretch: expanded;
 }
+h2{
+    margin-left: 30px;
+}
 .dp-menu ul {
     list-style-type: none;
     padding: 0;
@@ -148,4 +151,24 @@ footer{
     left: 50%;
     transform: translate(-50%, -50%);
     }
+}
+address{
+    font-weight: bolder;
+    margin-top: 20%;
+}
+footer{
+    border-color: black;
+}
+article{
+    margin-right: 5px;
+}
+aside ul li{
+    list-style-type: none;
+}
+article a{
+    color: blue;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(151, 83, 196);
 }
